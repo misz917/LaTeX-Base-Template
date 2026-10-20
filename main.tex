@@ -1,0 +1,56 @@
+\documentclass[a4paper, 12pt]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[polish]{babel}
+\usepackage{indentfirst} % wcięcie pierwszego akapitu
+\usepackage{times} % times new roman
+\usepackage[top=25mm, bottom=25mm, left=20mm, right=20mm]{geometry}
+\usepackage{graphicx}
+\usepackage[backend=biber, style=numeric]{biblatex}
+\usepackage{csquotes}
+\usepackage{xcolor}
+\usepackage[most]{tcolorbox}
+\usepackage{float}
+\usepackage{csquotes}
+\usepackage{booktabs}
+\usepackage{enumitem}
+\usepackage{minted}
+\usepackage{tabularx}
+
+\renewcommand{\thesection}{\arabic{section}}
+% \linespread{1.5}
+
+\addbibresource{sources.bib}
+
+% BEGIN: Strona tytułowa
+\begin{document}
+\begin{titlepage}
+    \centering
+    {\LARGE Tytuł\par}
+\end{titlepage}
+% END:   Strona tytułowa
+
+% BEGIN: Spis treści
+\tableofcontents
+% END:   Spis treści
+
+% BEGIN: Treść
+\newpage
+\section{Treść}
+Początek treści
+% END:   Treść
+
+% BEGIN: Spis rysunków
+\addcontentsline{toc}{section}{\listfigurename}
+{
+    \renewcommand{\listfigurename}{\Large Spis rysunków}
+    \listoffigures
+}
+% END:   Spis rysunków
+
+% BEGIN: Literatura
+\addcontentsline{toc}{section}{Literatura}
+\printbibliography[title={\Large Literatura}]
+% END:   Literatura
+
+\end{document}

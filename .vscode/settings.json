@@ -1,0 +1,5 @@
+{
+    "latex-workshop.latex.outDir": "./",
+    "latex-workshop.latex.auxDir": "./build",
+    "latex-workshop.latex.spellcheck.language": "pl-PL",
+}

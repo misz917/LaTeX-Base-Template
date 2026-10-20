@@ -1,0 +1,3 @@
+{"rule":"COMMA_PARENTHESIS_WHITESPACE","sentence":"^\\Q.\\E$"}
+{"rule":"MORFOLOGIK_RULE_PL_PL","sentence":".*Dummy.*"}
+{"rule":"SENTENCE_WHITESPACE","sentence":"^\\Q\\E(?:Dummy|Ina|Jimmy-)[0-9]+$"}
